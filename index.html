@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Datos COVID-19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container my-4">
+        <h1 class="text-center p-2">Datos COVID-19 por País</h1>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="mx-auto d-flex align-items-center mb-4">
+                    <figure class="figure">
+                        <img src="img/covid.png" class="figure-img img-fluid rounded" alt="covid">
+                    </figure>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mx-auto mt-4">
+                    <form id="formulario">
+                        <div class="form-group">
+                            <select class="form-control" id="paises">
+                                <option value="" disabled selected>Seleccione País</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn btn-primary btn-lg w-100" type="submit" value="Ver Datos">
+                        </div>
+                    </form>
+                    <div class="col-lg-12 col-sm-12 mt-5 mx-auto" id="resultado"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>
